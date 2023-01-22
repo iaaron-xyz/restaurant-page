@@ -105,3 +105,6 @@ dist
 
 # vscode editor
 .vscode
+
+# extras
+src/mean.css

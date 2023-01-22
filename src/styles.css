@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     border: 1px solid coral;
@@ -9,4 +9,7 @@ html, body {
     color: coral;
     height: 100%;
     width: 100%;
-}
+} */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
