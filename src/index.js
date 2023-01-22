@@ -1,6 +1,6 @@
-import {homeTest} from './home.js';
-import {menuTest} from './menu.js';
-import {contactTest} from './contact.js';
+import { homeTest } from './home';
+import { menuTest } from './menu';
+import { contactTest } from './contact';
 import './styles.css';
 
 // get the body element
