@@ -1,4 +1,6 @@
+import {homeTest} from './home.js';
 import {menuTest} from './menu.js';
+import {contactTest} from './contact.js';
 import './styles.css';
 
 // get the body element
@@ -15,4 +17,6 @@ body.appendChild(container);
 container.textContent = 'This is a generated text';
 
 console.log('This restaurnat page is working');
+console.log(homeTest());
 console.log(menuTest());
+console.log(contactTest());
