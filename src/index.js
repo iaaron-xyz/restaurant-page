@@ -19,7 +19,7 @@ function initializeHtml() {
   const container = document.createElement('div');
   // Add id and classes
   container.setAttribute('id', 'container');
-  container.setAttribute('class', 'text-3xl font-bold');
+  container.setAttribute('class', 'text-5xl');
 
   // Render the container div
   body.appendChild(container);

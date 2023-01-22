@@ -5,7 +5,7 @@ function createNav(container) {
   const navContainer = document.createElement('nav');
   // set attributes to navbar
   navContainer.setAttribute('id', 'navbar');
-  navContainer.setAttribute('class', 'w-full flex flex-row items-center h-24');
+  navContainer.setAttribute('class', 'w-full flex flex-row items-center h-24 mt-6');
   // append navbar to container
   container.appendChild(navContainer);
 
@@ -17,7 +17,10 @@ function createNavItems() {
   // Create navbar items
   const navItems = createNItems(3, 'text-center grow', 'navItem', true);
   // Navbar items content
-  const navItemsContent = ['Menu', 'Home', 'Contact'];
+  const navItemsContent = [
+    '<button type="button" class="h-full">Menu</button>',
+    '<button type="button" class="h-full">Pasta and Salads</button>',
+    '<button type="button" class="h-full">Contact</button>'];
   // append navbar to container
   for (let i = 0; i < navItems.length; i += 1) {
     // eslint-disable-next-line no-param-reassign

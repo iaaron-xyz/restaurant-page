@@ -1,15 +1,11 @@
-/* * {
-    margin: 0;
-    padding: 0;
-    border: 1px solid coral;
-    box-sizing: border-box;
-}
-html, body {
-    background-color: black;
-    color: coral;
-    height: 100%;
-    width: 100%;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Zilla+Slab&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    html {
+        font-family: 'Old Standard TT', serif;
+    }
+}
