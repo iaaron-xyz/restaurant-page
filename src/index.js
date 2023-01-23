@@ -1,7 +1,7 @@
 import { createNav, createNavItems } from './navbar';
 import { renderHome, createHome } from './home';
 import { createMenu, renderMenu } from './menu';
-// import { contactTest } from './contact';
+import { createContact, renderContact } from './contact';
 import './mean.css';
 
 /**
@@ -41,6 +41,7 @@ createNavItems();
  */
 createHome();
 createMenu();
+createContact();
 renderHome();
 
 /**
@@ -48,3 +49,4 @@ renderHome();
  */
 document.getElementById('navItem1').addEventListener('click', renderHome);
 document.getElementById('navItem0').addEventListener('click', renderMenu);
+document.getElementById('navItem2').addEventListener('click', renderContact);
