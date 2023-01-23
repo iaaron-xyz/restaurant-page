@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Zilla+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Old+Standard+TT&family=Tenor+Sans&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -13,5 +13,12 @@
 
     html {
         font-family: 'Old Standard TT', serif;
+    }
+    .number-font {
+        font-family: 'Cutive mono', monospace;
+        font-weight: bold;
+    }
+    .content-font {
+        font-family: 'Tenor Sans', sans-serif;
     }
 }
