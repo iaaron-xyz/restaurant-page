@@ -1,6 +1,6 @@
 import { createNav, createNavItems } from './navbar';
-import { renderHome } from './home';
-// import { menuTest } from './menu';
+import { renderHome, createHome } from './home';
+import { createMenu, renderMenu } from './menu';
 // import { contactTest } from './contact';
 import './mean.css';
 
@@ -39,9 +39,12 @@ createNavItems();
 /**
  * Add Home content
  */
+createHome();
+createMenu();
 renderHome();
 
 /**
  * Event Listeners
  */
 document.getElementById('navItem1').addEventListener('click', renderHome);
+document.getElementById('navItem0').addEventListener('click', renderMenu);

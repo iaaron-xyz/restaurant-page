@@ -1,12 +1,12 @@
 import CoverImg from './platecover.png';
 
-function renderHome() {
+function createHome() {
   // Get DOM elements
   const container = document.getElementById('container');
 
   // manipulate element
   const homeContainer = document.createElement('div');
-  homeContainer.setAttribute('class', 'flex grow items-center justify-center text-8xl');
+  homeContainer.setAttribute('class', 'flex grow items-center justify-center text-8xl hidden');
   homeContainer.setAttribute('id', 'home-container');
   // Add image
   // Create image object
@@ -19,4 +19,25 @@ function renderHome() {
   container.appendChild(homeContainer);
 }
 
-export { renderHome };
+function renderHome() {
+  // get containers to hide and show
+  const homeContainer = document.getElementById('home-container');
+  const menuContainer = document.getElementById('menu-container');
+  // const contactContainer = document.getElementById('contact-container');
+
+  // hide menu and contact - using tailwind class
+  // hide => display: none;
+  if (menuContainer) {
+    menuContainer.classList.add('hidden');
+  }
+  // if (contactContainer) {
+  // contactContainer.classList.add('hide');
+  // }
+
+  // Display home
+  if (homeContainer) {
+    homeContainer.classList.remove('hidden');
+  }
+}
+
+export { renderHome, createHome };
