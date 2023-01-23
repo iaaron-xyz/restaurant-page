@@ -18,9 +18,9 @@ function createNavItems() {
   const navItems = createNItems(3, 'text-center grow', 'navItem', true);
   // Navbar items content
   const navItemsContent = [
-    '<button type="button" class="h-full">Menu</button>',
-    '<button type="button" class="h-full">Pasta and Salads</button>',
-    '<button type="button" class="h-full">Contact</button>'];
+    '<button type="button" class="h-full hover:underline underline-offset-8">Menu</button>',
+    '<button type="button" class="h-full hover:underline underline-offset-8">Pasta and Salads</button>',
+    '<button type="button" class="h-full hover:underline underline-offset-8">Contact</button>'];
   // append navbar to container
   for (let i = 0; i < navItems.length; i += 1) {
     // eslint-disable-next-line no-param-reassign

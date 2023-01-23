@@ -1,5 +1,5 @@
 import { createNav, createNavItems } from './navbar';
-import { createHomeContainer } from './home';
+import { renderHome } from './home';
 // import { menuTest } from './menu';
 // import { contactTest } from './contact';
 import './mean.css';
@@ -14,8 +14,8 @@ function initializeHtml() {
   const body = document.getElementsByTagName('body')[0];
   // Set attributes to body and html
   body.setAttribute('class', 'h-full w-full');
-  html.setAttribute('class', 'h-full w-full box-border bg-black text-white');
-  // html.setAttribute('class', 'h-full w-full');
+  // html.setAttribute('class', 'h-full w-full box-border bg-black text-white');
+  html.setAttribute('class', 'h-full w-full');
   // Generate the main continer
   const container = document.createElement('div');
   // Add id and classes
@@ -39,7 +39,9 @@ createNavItems();
 /**
  * Add Home content
  */
-createHomeContainer();
+renderHome();
 
-// Insert text inside the container
-// container.textContent = 'This is a generated text';
+/**
+ * Event Listeners
+ */
+document.getElementById('navItem1').addEventListener('click', renderHome);
