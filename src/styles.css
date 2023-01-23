@@ -5,6 +5,12 @@
 @tailwind utilities;
 
 @layer base {
+    /* For testin purpose */
+    /* * {
+        border: 1px solid coral;
+        box-sizing: border-box;
+    } */
+
     html {
         font-family: 'Old Standard TT', serif;
     }
