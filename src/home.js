@@ -6,7 +6,7 @@ function createHome() {
 
   // manipulate element
   const homeContainer = document.createElement('div');
-  homeContainer.setAttribute('class', 'flex grow items-center justify-center text-8xl hidden');
+  homeContainer.setAttribute('class', 'flex grow items-center justify-center text-8xl mt-24 hidden');
   homeContainer.setAttribute('id', 'home-container');
   // Add image
   // Create image object
