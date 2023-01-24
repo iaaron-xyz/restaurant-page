@@ -1,3 +1,6 @@
+import PastaImg from './pasta.png';
+import SaladImg from './salad.png';
+
 // Manu plate class
 class MenuPlate {
   constructor(name, description, price, sectionMenu) {
@@ -57,7 +60,13 @@ function createMenu() {
   let counter = 0;
   plates.forEach((plate) => {
     if (plate.sectionMenu.toLowerCase() === 'salads' && counter === 0) {
+      // Create image object
+      const pastaImage = new Image();
+      // Get and assign the image url
+      pastaImage.src = SaladImg;
       menuContainer.innerHTML += '<h1 class="mt-12">Salads</h1>';
+      // insert the image html code
+      menuContainer.innerHTML += `<img src="${pastaImage.src}">`;
       menuContainer.innerHTML += `<div class="mt-12 text-base content-font w-1/3">
                                     <h2 class="text-3xl mb-2">${plate.name}</h2>
                                     <div class="grid grid-cols-3 gap-6">
@@ -82,7 +91,13 @@ function createMenu() {
   counter = 0;
   plates.forEach((plate) => {
     if (plate.sectionMenu.toLowerCase() === 'pasta' && counter === 0) {
-      menuContainer.innerHTML += `<h1 class="mt-12">${plate.sectionMenu}</h1>`;
+      // Create image object
+      const pastaImage = new Image();
+      // Get and assign the image url
+      pastaImage.src = PastaImg;
+      menuContainer.innerHTML += '<h1 class="mt-12">Pasta</h1>';
+      // insert the image html code
+      menuContainer.innerHTML += `<img src="${pastaImage.src}">`;
       menuContainer.innerHTML += `<div class="mt-12 text-base content-font w-1/3">
                                     <h2 class="text-3xl mb-2">${plate.name}</h2>
                                     <div class="grid grid-cols-3 gap-6">
