@@ -1,5 +1,5 @@
 import { createNav, createNavItems } from './navbar';
-import { renderHome, createHome } from './home';
+import { renderHome, createHome, createHomeAbout } from './home';
 import { createMenu, renderMenu } from './menu';
 import { createContact, renderContact } from './contact';
 import './mean.css';
@@ -38,6 +38,7 @@ createNavItems();
  * Add Home content
  */
 createHome();
+createHomeAbout();
 createMenu();
 createContact();
 renderHome();

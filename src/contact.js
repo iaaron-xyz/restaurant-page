@@ -41,6 +41,7 @@ function renderContact() {
   const homeContainer = document.getElementById('home-container');
   const menuContainer = document.getElementById('menu-container');
   const contactContainer = document.getElementById('contact-container');
+  const homeAboutContainer = document.getElementById('home-about-container');
 
   // hide menu and contact - using tailwind class
   // hidden => display: none;
@@ -49,6 +50,9 @@ function renderContact() {
   }
   if (menuContainer) {
     menuContainer.classList.add('hidden');
+  }
+  if (homeAboutContainer) {
+    homeAboutContainer.classList.add('hidden');
   }
 
   // Display home

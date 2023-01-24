@@ -21,4 +21,9 @@
     .content-font {
         font-family: 'Tenor Sans', sans-serif;
     }
+    .offset-position {
+        position: relative;
+        bottom:  15px;
+        right: 15px;
+    }
 }

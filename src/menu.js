@@ -126,6 +126,7 @@ function renderMenu() {
   const homeContainer = document.getElementById('home-container');
   const menuContainer = document.getElementById('menu-container');
   const contactContainer = document.getElementById('contact-container');
+  const homeAboutContainer = document.getElementById('home-about-container');
 
   // hide home and contact - using tailwind class
   // hide => display: none;
@@ -134,6 +135,9 @@ function renderMenu() {
   }
   if (contactContainer) {
     contactContainer.classList.add('hidden');
+  }
+  if (homeAboutContainer) {
+    homeAboutContainer.classList.add('hidden');
   }
 
   // Display home
