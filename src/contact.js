@@ -12,7 +12,7 @@ function createContact() {
                                   <h2 class="pb-24 text-4xl">Contact Section</h2>
                                   <div class="grid grid-cols-2 content-font gap-24 pb-8">
                                     <input type="text" id="name" placeholder="Your Name" class="border-b-2 border-solid border-amber-800">
-                                    <input type="text" id"phone" placeholder="Your Phone" class="border-b-2 border-solid border-amber-800">
+                                    <input type="text" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" id"phone" placeholder="Phone: 33-1234-8754" class="border-b-2 border-solid border-amber-800">
                                   </div>
                                   <div class="grid grid-cols-3 number-font gap-12 mt-16">
                                     <select id="persons" placeholder="2 Persons" class="border-b-2 border-solid border-amber-800">
@@ -22,8 +22,8 @@ function createContact() {
                                       <option value="4-person">4 Persons</option>
                                     </select>
                                     </select>
-                                    <input type="date" id"date" value="date" class="border-b-2 border-solid border-amber-800">
-                                    <input type="time" id"time" value="time" class="border-b-2 border-solid border-amber-800">
+                                    <input type="date" id"date" class="border-b-2 border-solid border-amber-800">
+                                    <input type="time" id"time" class="border-b-2 border-solid border-amber-800">
                                   </div>
                                   <button type="button" class="p-3 content-font text-white bg-amber-800 border-2 border-solid border-amber-200 mt-24">Book a Table!</button>
                                 </div>`;
